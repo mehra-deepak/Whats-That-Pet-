@@ -40,7 +40,6 @@ classifier.add(Dense(units =1, activation = 'sigmoid'))
 
 classifier.compile(optimizer= 'adam',loss='binary_crossentropy',metrics=['accuracy'])
 
-'''
 # image augmentation 
 
 from keras.preprocessing.image import ImageDataGenerator
@@ -69,4 +68,3 @@ classifier.fit_generator(training_set,
                          epochs = 25,
                          validation_data = test_set,
                          validation_steps = (2000/32))
-'''
